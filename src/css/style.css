@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+:root {
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+
+body, html {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    padding: 20px;
+}
+
+div.tela {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    min-width: 0;
+    opacity: .7;
+    height: 100vh;
+    transition: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+div.tela.active {
+    min-width: 30vw;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+
+nav > button.btn-menu {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+nav ul.navbar {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 2rem;
+    right: -20px;
+
+    padding-left: 30px;
+    padding-block-start: 20px;
+    list-style: none;
+    
+    
+    height: 100vh;
+    width: 0;
+    visibility: hidden;
+    background-color: var(--Almost-White);
+    transition: 0.5s;
+    transition-timing-function: ease-out;
+}
+nav ul.navbar.active {  
+    visibility: visible;  
+    width: 70vw;
+}
+
+nav ul.navbar > div.left {
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul.navbar > div.left > li {
+    margin-bottom: 20px;
+}
+
+nav ul.navbar > div.left li a {
+    color: var(--Medium-Gray);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+nav ul.navbar > div.left > li > a > img {
+    margin-inline-start: 10px;
+}
+
+nav ul.navbar > div.left ul.menu-features,
+nav ul.navbar > div.left ul.menu-company {
+    display: none;
+}
+
+nav ul.navbar > div.left ul.menu-features.active,
+nav ul.navbar > div.left ul.menu-company.active {
+    display: block;
+    margin-top: 20px;
+    margin-inline-start: 20px;
+    list-style: none;
+}
+
+nav ul.navbar > div.left ul.menu-features li {
+    margin-block-end: 10px;
+}
+nav ul.navbar > div.left ul.menu-features img{
+    margin-inline-end: 15px;
+}
+
+nav ul.navbar > div.left ul.menu-company > li {
+    margin-block-end: 10px;
+}
+
+nav ul.navbar > div.rigth {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+nav ul.navbar > div.rigth button {
+    background-color: transparent;
+    border: none;
+    color: var(--Medium-Gray);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 30px;
+    cursor: pointer;
+    width: 80%;
+}
+
+nav ul.navbar > div.rigth button.register {
+    border: 2px solid var(--Medium-Gray);
+    border-radius: 15px;
+}
+
+/* body */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main > div.rigth img {
+    width: 100%;
+    height: 100%;
+}
+
+main > div.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main > div.left > div.conteudo {
+    padding: 10px;
+    text-align: center;
+}
+
+main > div.left > div.conteudo > h1 {
+    font-size: 2.4rem;
+    color: var(--Almost-Black);
+    font-weight: 700;
+    margin: 20px 0px;
+}
+
+main > div.left > div.conteudo > p {
+    font-size: 18px;
+    color: var(--Medium-Gray);
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+main > div.left > div.conteudo > button {
+    border: none;
+    border-radius: 15px;
+    background-color: var(--Almost-Black);
+    padding: 15px 30px;
+    margin: 30px 0px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--Almost-White);
+    cursor: pointer;
+}
+
+main > div.left > div.icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    column-gap: 20px;
+    padding: 0px 10px;
+}
+
+main > div.left > div.icons img {
+    max-width: 20%;
+}

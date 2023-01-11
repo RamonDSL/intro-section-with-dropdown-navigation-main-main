@@ -1,0 +1,119 @@
+:root {
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+}
+
+@media screen and (min-width: 768px) {
+    nav > button.btn-menu {
+        display: none;
+    }
+    header {
+        display: flex;
+        justify-content: baseline;
+        align-items: baseline;
+        height: 9rem;
+        padding: 20px;
+    }
+    div.logo {
+        margin-inline-end: 50px;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        align-self: start;
+        width: 100%;
+    }
+    nav ul.navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        position: relative;
+        top: auto;
+        right: auto;
+        
+        padding-left: 0;
+        padding-block-start: 0;
+        list-style: none;
+        
+        
+        height: auto;
+        width: 100%;
+        visibility: visible;
+        background-color: transparent;
+        transition: none;
+    }
+    nav ul.navbar > div.left {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+    }
+    nav ul.navbar div.left li a:hover {
+        color: var(--Almost-Black);
+        font-weight: 700;
+    }
+    nav ul.navbar > div.left > li {
+        margin-inline-end: 50px;
+    }
+    nav ul.navbar > div.left ul.menu-features {
+        position: absolute;
+        top: 10px;
+        left: -70px;
+        padding: 12px 15px;
+        border-radius: 10px;
+        background-color: var(--Almost-White);
+        box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.247);
+    }
+    nav ul.navbar > div.left ul.menu-company {    
+        position: absolute;
+        top: 10px;
+        left: 120px;
+        padding: 15px 20px;
+        border-radius: 10px;
+        background-color: var(--Almost-White);
+        box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.247);
+    }
+    nav ul.navbar > div.rigth {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    nav ul.navbar > div.rigth button {
+        margin-top: -15px;
+        width: 100%;
+    }
+    nav ul.navbar > div.rigth button:hover {
+        color: var(--Almost-Black);
+        border-color: var(--Almost-Black);
+        font-weight: 700;
+    }
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 50px 100px;
+        margin-top: -60px;
+    }
+    main > div.left {
+        margin-inline-end: 100px;
+        align-items: end;
+    }    
+    main > div.left > div.conteudo {
+        padding: 10px;
+        padding-block-start: 45px;
+        text-align: left;
+    }
+    main > div.left > div.conteudo > h1 {
+        font-size: 4rem;
+    }
+    main > div.left > div.conteudo > p {
+        margin: 40px 0px 30px 0px;
+    }
+    main > div.left > div.conteudo > button:hover {
+        border: 1px solid var(--Almost-Black);
+        background-color: var(--Almost-White);
+        color: var(--Almost-Black);
+        font-weight: 700;
+    }
+}
