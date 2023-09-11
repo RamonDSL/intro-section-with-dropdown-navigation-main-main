@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="description" content="Desafio do Frontend Mentor">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <script defer src="./src/JS/script.js"></script>
+</head>
+
+<body>
+  <header>
+    <img src="./images/logo.svg" alt="logo image" class="header-brand">
+
+    <button class="btn-menu" title="botão para abrir o menu"><img src="./images/icon-menu.svg"
+        alt="menu image"></button>
+
+    <nav class="sect-navbar">
+      <ul class="navbar">
+        <div class="pages">
+          <li class="sub-menu">
+            <a href="#">Features <img src="./images/icon-arrow-down.svg" class="arrow" alt="arrow icon"></a>
+            <nav class="sect-sub-navbar" id="features" tabindex="-1">
+              <ul class="navbar">
+                <li><a tabindex="-1" href="#"><img src="./images/icon-todo.svg" alt="">Todo List</a>
+                </li>
+                <li><a tabindex="-1" href="#"><img src="./images/icon-calendar.svg"
+                      alt="">Calendar</a></li>
+                <li><a tabindex="-1" href="#"><img src="./images/icon-reminders.svg"
+                      alt="">Reminders</a></li>
+                <li><a tabindex="-1" href="#"><img src="./images/icon-planning.svg"
+                      alt="">Planning</a></li>
+              </ul>
+            </nav>
+          </li>
+          <li class="sub-menu">
+            <a href="#">Company <img src="./images/icon-arrow-down.svg" class="arrow" alt="arrow icon"></a>
+            <nav class="sect-sub-navbar" id="company" tabindex="-1">
+              <ul class="navbar">
+                <li><a tabindex="-1" href="#">History</a></li>
+                <li><a tabindex="-1" href="#">Our Team</a></li>
+                <li><a tabindex="-1" href="#">Blog</a></li>
+              </ul>
+            </nav>
+          </li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </div>
+
+        <div class="into-sistem">
+          <li><button>Login</button></li>
+          <li><button>Register</button></li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article class="content">
+      <h1>Make remote work</h1>
+
+      <p>
+        Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.
+      </p>
+
+      <button class="btn-learn-more">Learn more</button>
+
+      <div class="icons">
+        <figure><img src="./images/client-databiz.svg" alt="image databiz"></figure>
+        <figure><img src="./images/client-audiophile.svg" alt="image audiophile"></figure>
+        <figure><img src="./images/client-meet.svg" alt="image meet"></figure>
+        <figure><img src="./images/client-maker.svg" alt="image maker"></figure>
+      </div>
+    </article>
+
+    <figure class="image-hero">
+      <picture alt="image hero">
+        <source media="(max-width: 768px)" srcset="./images/image-hero-mobile.png">
+        <img src="./images/image-hero-desktop.png">
+      </picture>
+    </figure>
+  </main>
+
+  <footer>
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/RamonDSL?tab=repositories" target="_blank">Ramon Henrique</a>.
+    </p>
+  </footer>
+</body>
+
+</html>
